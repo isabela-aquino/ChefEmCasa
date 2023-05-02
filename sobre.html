@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chef em Casa</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+</head>
+
+<body>
+  <!--  Modal   -->
+  <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginTitulo">Entre na Sua Conta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="loginEmail">Email</label>
+              <input type="email" class="form-control" id="loginEmail">
+            </div>
+            <div class="form-group">
+              <label for="loginSenha">Senha</label>
+              <input type="password" class="form-control" id="loginSenha">
+            </div>
+            <button type="submit" class="btn btn-info mt-3">Entrar na Conta</button>
+            <button type="submit" class="btn btn-outline-info mt-3">Inscreva-se</button>
+            <small class="form-text text-muted d-flex mt-2">Esqueceu a senha? <a href="#" class="px-1">Clique aqui</a>.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fecha Modal  -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3">
+    <div class="container-fluid ">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/Chef em Casa.png" alt="Caravan" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class=" px-4 justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Receitas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="doces.html">Doces</a></li>
+              <li><a class="dropdown-item" href="salgado.html">Salgados</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mandesuareceita.html">Mande sua Receita</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar Receita" aria-label="Search">
+          <button class="btn btn-outline-info" type="submit">Buscar</button>
+        </form>
+      </div>
+
+    </div>
+  </nav>
+
+  <section class="container">
+    <div class="my-5 text-center">
+      <span class="h6 d-block">CONHEÇA A GENTE!</span>
+      <h1 class="display-4 text-primary">SOBRE</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-5 mr-4">
+        <img src="img/sobre.jpg" alt="" style="width: 400px;">
+      </div>
+      <div class="col-md-7 ml-5">
+      <p>Bem-vindos ao nosso site de receitas! Nós somos uma equipe de apaixonados por culinária e nutrição que acredita que uma alimentação saudável e saborosa é essencial para uma vida plena e feliz. Nosso objetivo é fornecer uma fonte confiável de receitas deliciosas, criativas e nutritivas para ajudar nossos leitores a fazer escolhas alimentares mais saudáveis e variadas.</p>
+
+      <p>Nosso site é resultado de anos de experiência no mundo culinário e de nutrição. Somos formados por uma equipe de chefs profissionais, nutricionistas, culinaristas e redatores, todos comprometidos em compartilhar nossos conhecimentos e habilidades com os nossos leitores.</p>
+
+      <p>Nós acreditamos que a comida é uma forma de expressão e amor, e que cada ingrediente tem sua história e sabor únicos. É por isso que nos esforçamos para oferecer receitas que vão desde o tradicional ao exótico, com ingredientes frescos e de alta qualidade, sempre adaptados às necessidades e preferências individuais de nossos leitores.</p>
+
+      <p>Além de nossas deliciosas receitas, oferecemos também recursos adicionais para ajudá-lo a aproveitar ao máximo suas refeições. Nossos guias de compras de alimentos e dicas de culinária são recursos valiosos para aqueles que desejam aprender mais sobre ingredientes, técnicas culinárias e como fazer escolhas alimentares mais conscientes.</p>
+
+      <p>Agradecemos por visitar nosso site e esperamos que nossas receitas e recursos possam ajudá-lo a criar momentos memoráveis ​​na cozinha e a descobrir novas formas de amar e cuidar de si mesmo e de sua família. Se tiver alguma dúvida ou sugestão, não hesite em entrar em contato conosco</p>
+    </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h4 class="h6">PÁGINAS</h4>
+          <ul class="list-unstyled">
+            <li><a class="link-underline link-underline-opacity-0 link-info " href="#">Sobre</a></li>
+            <li><a class="link-underline link-underline-opacity-0 link-info " href="#">Blog</a></li>
+            <li><a class="link-underline link-underline-opacity-0 link-info " href="#">Mande sua Receita</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6">
+          <h4 class="h6">Receitas</h4>
+          <ul class="list-unstyled text-secondary">
+            <li><a class="link-underline link-underline-opacity-0 link-info " href="#">Doces</a></li>
+            <li><a class="link-underline link-underline-opacity-0 link-info " href="#">Salgadas</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 ">
+          <h4 class="h6">DADOS DE CONTATO</h4>
+          <ul class="list-unstyled">
+            <li>chefemcasa@chefemcasa.com.br</li>
+            <li>21 99999-9999</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4 class="h6">REDES SOCIAIS</h4>
+          <ul class="list-unstyled">
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#"
+                style="max-width: 140px">Facebook</a></li>
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Twitter</a>
+            </li>
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Youtube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-info text-center py-3">
+      <p class="mb-0">Chef em Casa © 2017. Alguns direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

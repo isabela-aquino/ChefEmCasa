@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chef em Casa</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+</head>
+
+<body>
+  <!--  Modal   -->
+  <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginTitulo">Entre na Sua Conta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="loginEmail">Email</label>
+              <input type="email" class="form-control" id="loginEmail">
+            </div>
+            <div class="form-group">
+              <label for="loginSenha">Senha</label>
+              <input type="password" class="form-control" id="loginSenha">
+            </div>
+            <button type="submit" class="btn btn-info mt-3">Entrar na Conta</button>
+            <button type="submit" class="btn btn-outline-info mt-3">Inscreva-se</button>
+            <small class="form-text text-muted d-flex mt-2">Esqueceu a senha? <a href="#" class="px-1">Clique aqui</a>.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fecha Modal  -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3">
+    <div class="container-fluid ">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/Chef em Casa.png" alt="Caravan" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class=" px-4 justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Receitas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="doces.html">Doces</a></li>
+              <li><a class="dropdown-item" href="salgado.html">Salgados</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mandesuareceita.html">Mande sua Receita</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar Receita" aria-label="Search">
+          <button class="btn btn-outline-info" type="submit">Buscar</button>
+        </form>
+      </div>
+
+    </div>
+  </nav>
+
+  <main class="col-lg p-4 receitas">
+    <h1 class="display-4">Doces</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4 m-5">
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/BriadeiroGormet.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Brigadeiro Gourmet</h5>
+            <p class="card-text">Aprenda a fazer com a gente um delicioso Brigadeiro Gourmet</p>
+          </div>
+          <a href="receita.html" class="btn btn-info btn-lg my-4 mx-5">Ver Receita Completa</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/torta-de-maca.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Torta de Maça</h5>
+            <p class="card-text">Aprenda a fazer com a gente uma deliciosa Torta de Maça para aquela hora da fome</p>
+          </div>
+          <a href="#" class="btn btn-info btn-lg my-4 mx-5">Ver Receita Completa</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/brownie-rapido-9.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Brownie</h5>
+            <p class="card-text">Aprenda a fazer com a gente uma delicioso Brownie para aquela sobremesa de
+              domingo</p>
+          </div>
+          <a href="#" class="btn btn-info btn-lg my-4 mx-5">Ver Receita Completa</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/bolo de chocolate.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Bolo de chocolate com Morango</h5>
+            <p class="card-text">Ama um doce? Aprenda a fazer com a gente um delicioso Bolo de chocolate com Morango.
+            </p>
+          </div>
+          <a href="#" class="btn btn-info btn-lg my-4 mx-5">Ver Receita Completa</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/cookie.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cookie</h5>
+            <p class="card-text">Aprenda a fazer com a gente um delicios Cookie para aquela hora da fome</p>
+          </div>
+          <a href="#" class="btn btn-info btn-lg my-4 mx-5">Ver Receita Completa</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/mousse-de-maracuja.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mousse de maracuja</h5>
+            <p class="card-text">Aprenda a fazer com a gente um delicioso Mousse de Maracuja para aquela hora da fome</p>
+          </div>
+          <a href="#" class="btn btn-info btn-lg my-4 mx-5">Ver Receita Completa</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/petitgateu.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Petit Gateu</h5>
+            <p class="card-text">Aprenda a fazer com a gente um delicioso Petit Gateu para aquela hora da sobremessa</p>
+          </div>
+          <a href="#" class="btn btn-info btn-lg my-4 mx-5">Ver Receita Completa</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/sorvetecaseiro.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sorvete Caseiro</h5>
+            <p class="card-text">Aprenda a fazer com a gente um delicioso Petit Gateu para aquela hora da sobremessa</p>
+          </div>
+          <a href="#" class="btn btn-info btn-lg my-4 mx-5">Ver Receita Completa</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/Receitas-de-Cheesecake.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cheesecake</h5>
+            <p class="card-text">Aprenda a fazer com a gente um delicioso Cheesecake para aquela hora da sobremessa</p>
+          </div>
+          <a href="#" class="btn btn-info btn-lg my-4 mx-5">Ver Receita Completa</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h4 class="h6">PÁGINAS</h4>
+          <ul class="list-unstyled">
+            <li><a class="link-underline link-underline-opacity-0 link-info " href="#">Sobre</a></li>
+            <li><a class="link-underline link-underline-opacity-0 link-info " href="#">Blog</a></li>
+            <li><a class="link-underline link-underline-opacity-0 link-info " href="#">Mande sua Receita</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6">
+          <h4 class="h6">Receitas</h4>
+          <ul class="list-unstyled text-secondary">
+            <li><a class="link-underline link-underline-opacity-0 link-info " href="#">Doces</a></li>
+            <li><a class="link-underline link-underline-opacity-0 link-info " href="#">Salgadas</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 ">
+          <h4 class="h6">DADOS DE CONTATO</h4>
+          <ul class="list-unstyled">
+            <li>chefemcasa@chefemcasa.com.br</li>
+            <li>21 99999-9999</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4 class="h6">REDES SOCIAIS</h4>
+          <ul class="list-unstyled">
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#"
+                style="max-width: 140px">Facebook</a></li>
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Twitter</a>
+            </li>
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Youtube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-info text-center py-3">
+      <p class="mb-0">Chef em Casa © 2017. Alguns direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

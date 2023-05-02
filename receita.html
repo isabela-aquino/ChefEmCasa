@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chef em Casa</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+</head>
+
+<body>
+  <!--  Modal   -->
+  <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginTitulo">Entre na Sua Conta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="loginEmail">Email</label>
+              <input type="email" class="form-control" id="loginEmail">
+            </div>
+            <div class="form-group">
+              <label for="loginSenha">Senha</label>
+              <input type="password" class="form-control" id="loginSenha">
+            </div>
+            <button type="submit" class="btn btn-info mt-3">Entrar na Conta</button>
+            <button type="submit" class="btn btn-outline-info mt-3">Inscreva-se</button>
+            <small class="form-text text-muted d-flex mt-2">Esqueceu a senha? <a href="#" class="px-1">Clique
+                aqui</a>.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fecha Modal  -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3">
+    <div class="container-fluid ">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/Chef em Casa.png" alt="Caravan" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class=" px-4 justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Receitas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="doces.html">Doces</a></li>
+              <li><a class="dropdown-item" href="salgado.html">Salgados</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mandesuareceita.html">Mande sua Receita</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar Receita" aria-label="Search">
+          <button class="btn btn-outline-info" type="submit">Buscar</button>
+        </form>
+      </div>
+
+    </div>
+  </nav>
+
+  <img src="img/BriadeiroGormet.jpg" alt="" style="width: 100%; height: 500px; object-fit: cover;">
+  <section class="container mt-5">
+    <h1 class="display-4 mb-3">Brigadeiro Gourmet</h1>
+    <p>Bem-vindo à nossa página de receita de brigadeiro, um dos doces mais queridos e populares do Brasil! O brigadeiro
+      é um doce de origem brasileira, criado na década de 1940 em homenagem ao Brigadeiro Eduardo Gomes, candidato à
+      presidência da república na época. A receita original é feita com leite condensado, manteiga e chocolate em pó,
+      mas existem muitas variações dessa sobremesa tão amada.</p>
+
+    <p>O brigadeiro é conhecido por sua textura cremosa e sabor doce e reconfortante. É uma sobremesa que agrada a
+      todos, de crianças a adultos, e pode ser servida em qualquer ocasião, desde festas de aniversário até casamentos.
+    </p>
+
+    <p>Aqui está uma receita clássica de brigadeiro, que é fácil de fazer e requer poucos ingredientes:</p>
+
+    <div class="row row-cols-md-12 mb-4">
+
+    <div class="col-md-5 p-3 mr-3">
+      <h3 class="display-6">Ingredientes:</h3>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">1 lata de leite condensado</li>
+        <li class="list-group-item">1 colher de sopa de manteiga</li>
+        <li class="list-group-item">3 colheres de sopa de chocolate em pó</li>
+        <li class="list-group-item">Granulado para enrolar</li>
+      </ul>
+    </div>
+
+    <div class="col-md-6 p-3">
+      <h3 class="display-6">Instruções:</h3>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Em uma panela, coloque o leite condensado, a manteiga e o chocolate em pó. Misture bem.</li>
+        <li class="list-group-item">Leve a panela ao fogo médio e mexa sem parar até que a mistura comece a soltar do fundo da panela.</li>
+        <li class="list-group-item">Desligue o fogo e deixe a mistura esfriar.</li>
+        <li class="list-group-item">Com as mãos untadas com manteiga, faça bolinhas com a mistura e passe-as no granulado.</li>
+        <li class="list-group-item">Coloque os brigadeiros em forminhas de papel e sirva.</li>
+      </ul>
+    </div>
+
+  </div>
+     
+    <p>Agora que você já conhece a receita clássica de brigadeiro, que tal experimentar algumas variações? Você pode adicionar coco ralado, castanhas trituradas, café ou Nutella à mistura para dar um toque especial. Também é possível servir o brigadeiro em copinhos, em camadas com outras sobremesas, ou usá-lo como cobertura de bolo.</p>
+
+    <table class="table mt-5 mb-5">
+      <thead>
+        <tr>
+          <th scope="col">Tabela Nutricional</th>
+          <th></th>
+          <th scope="col">% VD (*)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Calorias (valor energético)</th>
+          <td>33.45 kcal</td>
+          <td>1.67%</td>
+        </tr>
+        <tr>
+          <th scope="row">Carboidratos líquidos</th>
+          <td>5.46g</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <th scope="row">Carboidratos</th>
+          <td>5.49g</td>
+          <td>1.83%</td>
+        </tr>
+        <tr>
+          <th scope="row">Proteínas</th>
+          <td>0.75g</td>
+          <td>0.25%</td>
+        </tr>
+        <tr>
+          <th scope="row">Gorduras totais</th>
+          <td>1.01g</td>
+          <td>1.84%</td>
+        </tr>
+        <tr>
+          <th scope="row">Gorduras saturadas</th>
+          <td>0.55g</td>
+          <td>2.50%</td>
+        </tr>
+        <tr>
+          <th scope="row">Fibra alimentar</th>
+          <td>0.02g</td>
+          <td>0.09%</td>
+        </tr>
+        <tr>
+          <th scope="row">Sódio</th>
+          <td>12.86mg</td>
+          <td>0.54%</td>
+        </tr>
+        <tr>
+          <td colspan="3">(*) % Valores Diários de referência com base em uma dieta de 2.000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas.
+          <br>
+            (**)O que são carboidratos líquidos? Carboidratos líquidos são aqueles que o corpo consegue digerir e, geralmente, não incluem as fibras. Descubra qual é a quantidade ideal de carboidratos líquidos que você deve consumir:
+            </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Esperamos que essa receita de brigadeiro te traga muita alegria e satisfação. Compartilhe conosco nos comentários suas próprias dicas e truques para fazer brigadeiros deliciosos!</p>
+  </section>
+
+  <footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h4 class="h6">PÁGINAS</h4>
+          <ul class="list-unstyled">
+            <li><a class="link-underline link-underline-opacity-0 link-info " href="#">Sobre</a></li>
+            <li><a class="link-underline link-underline-opacity-0 link-info " href="#">Blog</a></li>
+            <li><a class="link-underline link-underline-opacity-0 link-info " href="#">Mande sua Receita</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6">
+          <h4 class="h6">Receitas</h4>
+          <ul class="list-unstyled text-secondary">
+            <li><a class="link-underline link-underline-opacity-0 link-info " href="#">Doces</a></li>
+            <li><a class="link-underline link-underline-opacity-0 link-info " href="#">Salgadas</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 ">
+          <h4 class="h6">DADOS DE CONTATO</h4>
+          <ul class="list-unstyled">
+            <li>chefemcasa@chefemcasa.com.br</li>
+            <li>21 99999-9999</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4 class="h6">REDES SOCIAIS</h4>
+          <ul class="list-unstyled">
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#"
+                style="max-width: 140px">Facebook</a></li>
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Twitter</a>
+            </li>
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Youtube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-info text-center py-3">
+      <p class="mb-0">Chef em Casa © 2017. Alguns direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
