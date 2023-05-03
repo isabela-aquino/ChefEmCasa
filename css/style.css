@@ -2,12 +2,6 @@ body{
   padding-top: 75px;
 }
 
-div .justify-content-end{
-  display: flex;
-  height: 100%;
-  justify-content: end;
-}
-
 nav img{
   width: 250px;
 }
